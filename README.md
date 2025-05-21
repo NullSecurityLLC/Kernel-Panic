@@ -56,3 +56,55 @@ Writing scenes. Designing emotional logic. Naming traumas. Laughing, then crying
 
 ## Repo Structure (WIP)
 
+/kernel-panic/
+├── /src/ # Game code/scripts
+├── /assets/ # Music, art, terminal UI
+├── /docs/ # Design docs, narrative maps
+├── /terminal_scripts/ # Internal thought sequences
+├── /dev_notes/ # Real-life inspirations + raw logs
+├── README.md # You're here.
+
+
+---
+
+## Content Warning
+
+This game deals with:
+- Self-harm
+- Mental illness
+- Suicide
+- Trauma bonding
+- Emotional manipulation
+- Psychiatric medication
+
+Player discretion is advised.
+
+---
+
+## Why This Exists
+
+Because I lived it.  
+Because we didn’t die, but we easily could’ve.  
+Because someone out there still might.
+
+---
+
+## License
+
+MIT or Creative Commons, TBD.
+
+---
+
+## Final Thought
+
+If this game makes you feel too much…  
+that’s kind of the point.
+
+run hope.exe
+[ FILE NOT FOUND ]
+
+
+But maybe, just maybe—
+
+recover hope.exe --force
+
