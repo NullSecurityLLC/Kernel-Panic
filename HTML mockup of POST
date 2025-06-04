@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kernel Panic Boot Sequence</title>
+  <style>
+    body {
+      background-color: black;
+      color: #00ff00;
+      font-family: "Courier New", Courier, monospace;
+      padding: 20px;
+      white-space: pre;
+      font-size: 16px;
+    }
+
+    #terminal {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="terminal"></div>
+
+  <script>
+    const terminal = document.getElementById("terminal");
+
+    const bootLines = [
+      "kernel@panic:~ Initializing Consciousness...\n",
+      "> Running Emotional POST...\n",
+      "[ HOPE           ] ................. PASS",
+      "[ GUILT          ] ................. PASS",
+      "[ ANGER          ] ................. PASS (High Residual)",
+      "[ DISSOCIATION   ] ................. WARNING - Sync Drift Detected",
+      "[ TRUST          ] ................. FAILED - No Known Safe Entities",
+      "[ FORGIVENESS    ] ................. PENDING - Incomplete Processing",
+      "[ SELF           ] ................. UNKNOWN - Identity Core Not Found",
+      "",
+      "> Loading Memory Cache...",
+      "> Fragmentation Detected... Attempting Soft Reboot...",
+      "",
+      "> Environment Boot: [ ~ /room/digital_bunk.sys ]",
+      "\nYou wake up. Everything is still buzzing in your ears."
+    ];
+
+    let lineIndex = 0;
+
+    function typeLine() {
+      if (lineIndex >= bootLines.length) return;
+
+      const line = bootLines[lineIndex];
+      let charIndex = 0;
+      const lineElement = document.createElement("div");
+
+      terminal.appendChild(lineElement);
+
+      function typeChar() {
+        if (charIndex < line.length) {
+          lineElement.textContent += line.charAt(charIndex);
+          charIndex++;
+          setTimeout(typeChar, 20); // typing speed
+        } else {
+          lineIndex++;
+          setTimeout(typeLine, 400); // delay between lines
+        }
+      }
+
+      typeChar();
+    }
+
+    typeLine();
+  </script>
+</body>
+</html>
