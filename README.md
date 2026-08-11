@@ -40,10 +40,9 @@ It's not about saving the world. It's about trying to survive **each other.**
 
 **Engine**: TBD (Ren’Py / Godot candidate)  
 **Team**:  
-- Project Lead / Writer / Emotional Chaos: John  
-- Art: TBD  
-- Audio: TBD  
-- Programming: TBD
+- Project Lead / Writer / Emotional Chaos: Me and my unresolved issues
+
+-   
 
 ---
 
